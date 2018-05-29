@@ -44,7 +44,7 @@
                   </mat-form-field>
                 </div>
             <div>
-              <button mat-button matStepperNext [disabled]="notEntered()">Next</button>
+              <button mat-button matStepperNext [disabled]="notEntered()">Dalje</button>
             </div>
           </form>
         </mat-step>
@@ -88,8 +88,8 @@
                 </div>
               <div>
                   <br>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button matStepperNext>Next</button>
+                <button mat-button matStepperPrevious>Nazad</button>
+                <button mat-button matStepperNext>Dalje</button>
               </div>
             </form>
           </mat-step>
@@ -98,7 +98,7 @@
           You are now done,.
           <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="notEntered()">Kreiraj</button>
           <div>
-            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperPrevious>Nazad</button>
             <!-- <button mat-button (click)="stepper.reset()">Reset</button> -->
           </div>
         </mat-step>
