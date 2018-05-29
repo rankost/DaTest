@@ -22,8 +22,7 @@ export class UserSearchComponent implements OnInit {
 
   category =
     [
-      { id: 1, name: "People" },
-      { id: 2, name: "Group" }
+      { id: 1, name: "People" }
     ];
     selectedValue = null;
   filter = [
@@ -43,8 +42,6 @@ export class UserSearchComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  // za tabelu
-  
   constructor(private _userService: UserServiceService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
